@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Press me</button>
+    <div id="displayScore"></div>
+  </body>
+  <script>
+    const button = document.querySelector("button");
+
+    function displayStudentScore() {
+      const name = prompt("What is your name?");
+      const score = 67;
+      const displayScoreVar = document.querySelector("#displayScore");
+      displayScoreVar.textContent = `Hello ${name}, nice to see you!
+                                    You scored ${score} marks`;
+    }
+
+    button.addEventListener("click", displayStudentScore);
+  </script>
+</html>
